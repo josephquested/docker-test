@@ -1,9 +1,10 @@
 {
-  "name": "pupparazzi",
-  "version": "2.0.0",
-  "description": "Challenge to learn server side rendering and callbacks",
+  "name": "baddb",
+  "version": "1.0",
+  "type": "module",
+  "description": "the bad database",
   "main": "index.js",
-  "author": "Dev Academy Aotearoa",
+  "author": "josephquested",
   "license": "ISC",
   "scripts": {
     "start": "node server/index",
@@ -12,17 +13,17 @@
     "test": "jest --watchAll",
     "format": "prettier -w '**/*.{js,jsx,ts,tsx}'"
   },
-  "homepage": "https://github.com/dev-academy-challenges/pupparazzi#readme",
+  "homepage": "https://github.com/dev-academy-challenges/baddb#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dev-academy-challenges/pupparazzi.git"
+    "url": "git+https://github.com/dev-academy-challenges/baddb.git"
   },
   "bugs": {
-    "url": "https://github.com/dev-academy-challenges/pupparazzi/issues"
+    "url": "https://github.com/dev-academy-challenges/baddb/issues"
   },
   "eslintConfig": {
     "extends": [
-      "@devacademy",
+      "@josephquest",
       "plugin:jest/recommended"
     ],
     "plugins": [
@@ -37,9 +38,11 @@
   },
   "dependencies": {
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2"
+    "express-handlebars": "^6.0.2",
+    "kept": "^0.24.0"
   },
   "devDependencies": {
+    "@devacademy/eslint-config": "^1.8.0",
     "@testing-library/dom": "^8.17.1",
     "@testing-library/jest-dom": "^5.16.5",
     "eslint": "^8.10.0",
@@ -53,8 +56,7 @@
     "jsdom": "^20.0.0",
     "nodemon": "^2.0.15",
     "prettier": "2.6.1",
-    "supertest": "^6.2.2",
-    "@devacademy/eslint-config": "^1.8.0"
+    "supertest": "^6.2.2"
   },
   "prettier": {
     "semi": false,
